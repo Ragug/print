@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<!-- Create a div to display the PDF -->
+<div id="pdf-viewer"></div>
+
+<!-- Create a button to trigger the print dialog -->
+<button onclick="printPDF()">Print</button>
+
+<script>
+  // Set the source of the PDF viewer to the URL of the PDF
+  var pdfViewer = document.getElementById('pdf-viewer');
+  pdfViewer.innerHTML = '<embed src="./pdffile.pdf" type="application/pdf" width="100%" height="800px" download="false"/>';
+
+  // Define the function to trigger the print dialog
+  function printPDF() {
+    window.frames["pdf-viewer"].focus();
+    window.frames["pdf-viewer"].print();
+  }
+</script>
+
+</body>
+</html>
