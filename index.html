@@ -1,24 +1,20 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ragu</title>
+</head>
 <body>
+  <center><embed src="./pdf/pan_card.pdf" type="application/pdf" width="80%" height="400px" download="false"/>
+  <br><br>
+  <embed src="./pdf/aadhar_card.pdf" type="application/pdf" width="80%" height="400px" download="false"/>
+  <br><br>
+  <embed src="./pdf/obpass.pdf" type="application/pdf" width="80%" height="400px" download="false"/>
+  <br><br>
+  <embed src="./pdf/voter_id.pdf" type="application/pdf" width="80%" height="800px" download="false"/></center>
 
-<!-- Create a div to display the PDF -->
-<div id="pdf-viewer"></div>
-
-<!-- Create a button to trigger the print dialog -->
-<button onclick="printPDF()">Print</button>
-
-<script>
-  // Set the source of the PDF viewer to the URL of the PDF
-  var pdfViewer = document.getElementById('pdf-viewer');
-  pdfViewer.innerHTML = '<embed src="./Letter+of+Authorization_Background_Verification.pdf" type="application/pdf" width="100%" height="800px" download="false"/><br><br><embed src="./ragu_pan.pdf" type="application/pdf" width="100%" height="800px" download="false"/>';
-
-  // Define the function to trigger the print dialog
-  function printPDF() {
-    window.frames["pdf-viewer"].focus();
-    window.frames["pdf-viewer"].print();
-  }
-</script>
 
 </body>
 </html>
